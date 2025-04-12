@@ -58,9 +58,14 @@ This project is a web application that allows users to generate and view **stati
 
 ## 📂 Project Structure
 
-/frontend ├── App.js # Main React component ├── visualization.js # Displays iframe or image for results └── App.css # Basic styling
+/frontend 
+  ├── App.js # Main React component 
+  ├── visualization.js # Displays iframe or image for results 
+  └── App.css # Basic styling
 
-/backend ├── index.js # Express server for code execution ├── public/ # Stores generated outputs (images/HTML)
+/backend 
+  ├── index.js # Express server for code execution 
+  ├── public/ # Stores generated outputs (images/HTML)
 
 
 ---
@@ -74,8 +79,33 @@ This project is a web application that allows users to generate and view **stati
   
 ### Setup Backend
 
-```bash
+```
 cd backend
 npm install
 node index.js
+```
 
+### Setup Frontend
+
+```
+cd frontend
+npm install
+npm start
+```
+
+---
+
+## 🐞 Issues Encountered
+
+| Issue | Resolution |
+| --- | --- |
+| Missing R packages (`ggplot2`, etc.) | Installed using `install.packages()` |
+| `rgl` 3D plots not saving as PNG | Saved as interactive `.html` or used `rgl.snapshot()` |
+| Plotly HTML not displaying | Handled via iframe rendering in frontend |
+| Execution timeout | Set a 15-second timeout on the backend to prevent hanging |
+
+---
+
+## 🎥 Demo Video
+
+📹 [Demo Recording Link](#) – _Demonstrates 2–3 visualizations per language (static, interactive, and 3D)._
