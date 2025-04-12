@@ -59,12 +59,17 @@ This project is a web application that allows users to generate and view **stati
 ## 📂 Project Structure
 
 /frontend 
+
   ├── App.js # Main React component 
+
   ├── visualization.js # Displays iframe or image for results 
+  
   └── App.css # Basic styling
 
 /backend 
+  
   ├── index.js # Express server for code execution 
+  
   ├── public/ # Stores generated outputs (images/HTML)
 
 
